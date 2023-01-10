@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins;
+}
+
+.form__send {
+    background-color: aliceblue;
+    -webkit-box-shadow: 11px 6px 2px 1px rgb(211 211 252 / 43%);
+    box-shadow: 11px 6px 2px 1px rgb(211 211 252 / 43%);
+    border-radius: 3px;
+    max-width: 450px;
+    margin: 46px 66px;
+}
+
+h3 {
+    font-size: 22px;
+    color: rgba(71, 109, 206, 0.747);
+    text-align: center;
+    padding: 24px;
+}
+
+input[type="text"],
+input[type="password"] {
+    display: flex;
+    padding: 14px;
+    margin: 0 auto;
+    border-radius: 4px;
+    border: none;
+}
+
+input[type="password"] {
+    margin-top: 12px;
+}
+
+button[type="submit"] {
+    margin: 22px 0 26px 300px;
+    padding: 9px;
+    border: none;
+    background-color: rgb(151, 168, 235);
+    color: #FFFF;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.06rem;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
