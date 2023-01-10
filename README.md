@@ -7,4 +7,5 @@ The first testForms folder includes:
 2. styling in css file
 
 Second folder chatDesk:
-2 stylized web pages, connected plugins for js
+2 stylized web pages,
+connected plugins for js
