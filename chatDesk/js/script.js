@@ -8,17 +8,15 @@ const swiper = new Swiper('.swiper', {
     freeMode: true, // при перетаскивании превью ведет себя как при скролле
     // autoplay: true, // автоматическая прокрутка
 
-    // pagination: {
-    //     el: '.swiper-pagination',
-    // },
-
-    // navigation: {
-    //     nextEl: '.swiper-button-next',
-    //     prevEl: '.swiper-button-prev',
-    // },
     scrollbar: {
         el: '.swiper-scrollbar',
     },
-
-
 });
+
+document.querySelectorAll('.swiper-content')
+    .forEach(el => el.addEventListener('click', () => {
+        el.classList.toggle('swiper-slide-active');
+    }));
+
+const bellEl = document.querySelector('.bell');
+bellEl.addEventListener('pointerover', () => { bellEl.classList.toggle('bell-active'); });

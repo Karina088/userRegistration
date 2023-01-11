@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic"
+        rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <title>Document</title>
@@ -125,6 +128,14 @@
                     <img class="content__count-img" src="img/content/count-people.svg" alt="people icon">
                     <p class="content__count-par">1,093</p>
                 </div>
+            </div>
+            <div class="search">
+                <form action="#">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit"><img src="img/content/search.svg" alt="search icon"></button>
+                </form>
+            </div>
+            <div class="bell">
             </div>
         </div>
         <div class="swiper">
@@ -275,24 +286,56 @@
                 <div class="message__content-right">
                     <img src="img/message/backtack.svg" alt="backtack icon">
                     <img class="message__content-img" src="img/message/microphone.svg" alt="microphone icon">
-                    <p class="message__par">Message in #general</p>
+                    <textarea name="message" cols="70" placeholder="Message in #general"></textarea>
                 </div>
                 <div>
                     <img src="img/message/smile.svg" alt="smile icon">
                 </div>
-
-
             </div>
-
         </div>
     </main>
 
+    <div class="profile">
+        <img src="img/profile/avatar.jpg" alt="avatar">
+        <div class="profile__content">
+            <h4 class="profile__title">Adelaida Collins</h4>
+            <p class="profile__par">Designer</p>
+            <div class="profile__link">
+                <a href="#"><img src="img/profile/facebook.svg" alt="facebook photo"></a>
+                <a href="#"><img src="img/profile/twitter.svg" alt="twitter photo"></a>
+                <a href="#"><img src="img/profile/inst.svg" alt="instagram photo"></a>
+                <a href="#"><img src="img/profile/in.svg" alt="linkedIn photo"></a>
+            </div>
+            <div class="profile__btn">
+                <div class="profile__dropdown">
+                    <button class="profile__dropdown-par">Message</button>
+                    <button class="profile__dropdown-toggle"><img src="img/profile/arrow.svg" alt="arrow icon"></button>
+                </div>
+            </div>
+            <div class="profile__dropdown-list">
+                <ul>
+                    <li class="profile__name">Username</li>
+                    <li class="profile__info">@amilia_lu</li>
+                    <li class="profile__name">Email</li>
+                    <li class="profile__info">a-luna@gmail.com</li>
+                    <li class="profile__name">Skype</li>
+                    <li class="profile__info">amiluna</li>
+                    <li class="profile__name">Timezone</li>
+                    <li class="profile__info">2:21 PM Local time</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
+    <div class="picture">
+
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/easy-toggler@2.2.7"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/messageBtn.js"></script>
 </body>
 
 </html>

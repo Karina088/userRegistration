@@ -50,5 +50,11 @@ button[type="submit"] {
     letter-spacing: 0.06rem;
     cursor: pointer;
     border-radius: 4px;
+}
 
+textarea[type=text] {
+    margin: 16px 0 0 24px;
+    background-color: rgba(255, 255, 255, 0.821);
+    border-color: rgba(160, 212, 212, 0.527);
+    outline: none;
 }

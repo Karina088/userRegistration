@@ -8,3 +8,11 @@
 // document.body.append(form);
 
 // form.submit();
+
+// https://habr.com/ru/post/245731/
+
+const form = document.querySelector("form");
+form.addEventListener("submit", function (event) {
+    console.log("Saving value", form.elements.value.value);
+    event.preventDefault();
+});
