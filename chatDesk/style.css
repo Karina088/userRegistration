@@ -164,7 +164,7 @@ button:hover {
 }
 
 .dropdown__menu.show {
-    z-index: 99;
+    z-index: 90;
     visibility: visible;
     opacity: 1;
 }
