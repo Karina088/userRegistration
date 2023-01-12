@@ -15,9 +15,14 @@ body {
 }
 
 nav {
-    max-width: 84px;
     background-color: #000000;
     mix-blend-mode: normal;
+}
+
+input:hover,
+button:hover {
+    transition: all 3s ease-in-out;
+    box-shadow: 0px 2px 0px rgba(181, 181, 181, 0.511);
 }
 
 .dots {
@@ -44,6 +49,7 @@ nav {
 .logo {
     display: flex;
     flex-direction: column;
+    align-self: center;
 }
 
 .logo__img:hover,
@@ -55,8 +61,12 @@ nav {
     opacity: 0.7;
 }
 
+.icon {
+    align-self: center;
+}
+
 .icon__add {
-    margin: 80px 12px 0 12px;
+    margin: 98px 12px 0 12px;
     opacity: 0.4;
     width: 48px;
 }
@@ -253,10 +263,9 @@ main {
 }
 
 .content {
-    max-width: 836px;
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.24);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .content__text {
@@ -273,7 +282,7 @@ main {
 }
 
 .content__img {
-    margin-right: 322px;
+    margin-right: 412px;
 }
 
 .content__count {
@@ -296,6 +305,7 @@ main {
 .bell {
     display: flex;
     align-self: center;
+    margin-right: 32px;
 }
 
 .bell::after {
@@ -399,7 +409,7 @@ main {
 input[type="text"] {
     background: rgba(0, 0, 0, 0.0001);
     border: 0.5px solid rgba(0, 0, 0, 0.24);
-    padding: 8px 0 8px 16px;
+    padding: 8px 62px 8px 8px;
     border-radius: 4px;
     display: block;
     outline: none;
@@ -408,7 +418,7 @@ input[type="text"] {
 button[type="submit"] {
     position: absolute;
     top: 34px;
-    right: 27%;
+    right: 19%;
     z-index: 9;
     border: none;
     display: inline-block;
@@ -418,12 +428,12 @@ button[type="submit"] {
 
 .swiper {
     margin-top: 24px;
-    width: 840px;
+    width: 980px;
     height: 550px;
 }
 
-.swiper-slide {
-    margin-left: 32px;
+.swiper-wrapper {
+    padding: 0 32px;
 }
 
 .swiper-content {
@@ -463,13 +473,14 @@ span {
 
 .swiper__line {
     display: flex;
+
 }
 
 hr {
     background-color: #000000;
     mix-blend-mode: normal;
     opacity: 0.16;
-    width: 302px;
+    width: 372px;
     height: 1px;
     align-self: center;
     border: none;
@@ -505,11 +516,11 @@ hr {
 }
 
 .swiper__line-hr {
-    width: 342px;
+    width: 410px;
 }
 
 .swiper__line-hr-big {
-    width: 353px;
+    width: 422px;
 }
 
 .swiper__par-text {
@@ -649,17 +660,4 @@ textarea {
 
 .show {
     display: block;
-}
-
-.picture {
-    width: 136px;
-    /* 
-    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(83, 81, 81, 0) 100%);
-    background: linear-gradient(to bottom, rgba(225, 220, 220, 0.138) 0%, #85858560 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=0); */
-    background: -moz-linear-gradient(top, rgba(53, 64, 73, 0) 0%, rgba(44, 53, 61, 0.7) 35%, rgba(34, 39, 46, 1) 77%, rgba(28, 32, 38, 1) 100%);
-    background: -webkit-linear-gradient(top, rgba(53, 64, 73, 0) 0%, rgba(44, 53, 61, 0.7) 35%, rgba(34, 39, 46, 1) 77%, rgba(28, 32, 38, 1) 100%);
-    background: linear-gradient(to bottom, rgba(53, 64, 73, 0) 0%, rgba(44, 53, 61, 0.7) 35%, rgba(34, 39, 46, 1) 77%, rgba(28, 32, 38, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00354049', endColorstr='#1c2026', GradientType=0);
-    opacity: 0.5;
 }
