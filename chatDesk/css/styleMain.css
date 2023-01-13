@@ -1,0 +1,26 @@
+.logo__online {
+    opacity: 0.3;
+}
+
+.logo-icon-partTwo {
+    opacity: 1;
+}
+
+.logo-icon-partTwo:hover {
+    opacity: 0.3;
+}
+
+.icon__add:hover {
+    fill: #FFFFFF;
+    stroke: rgb(255, 253, 253);
+}
+
+.logo__img:hover,
+.icon__add:hover {
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+.logo__online:hover {
+    opacity: 0.3;
+}
