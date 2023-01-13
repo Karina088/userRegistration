@@ -54,11 +54,12 @@ button:hover {
 
 .logo__img:hover,
 .icon__add:hover {
-    opacity: 1;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
 }
 
-.logo-opacity {
-    opacity: 0.7;
+.logo__online:hover {
+    opacity: 0.3;
 }
 
 .icon {
@@ -71,6 +72,11 @@ button:hover {
     width: 48px;
 }
 
+.icon__add:hover {
+    fill: #FFFFFF;
+    stroke: rgb(255, 253, 253);
+}
+
 .dropdown {
     position: relative;
     mix-blend-mode: normal;
@@ -80,7 +86,7 @@ button:hover {
 
 .dropdown__btn {
     display: flex;
-    padding: 36px 0 30px 26px;
+    padding: 36px 0 30px 22px;
 }
 
 .dropdown-toggle {
@@ -93,7 +99,7 @@ button:hover {
 }
 
 .dropdown-toggle:after {
-    content: url(img/dropdown/downGrey.svg);
+    content: url(../img/dropdown/downGrey.svg);
     background-repeat: no-repeat;
     padding-left: 6px;
     cursor: pointer;
@@ -309,7 +315,7 @@ main {
 }
 
 .bell::after {
-    content: url(img/content/bell.svg);
+    content: url(../img/content/bell.svg);
 }
 
 .bell-active {
@@ -405,7 +411,6 @@ main {
     }
 }
 
-
 input[type="text"] {
     background: rgba(0, 0, 0, 0.0001);
     border: 0.5px solid rgba(0, 0, 0, 0.24);
@@ -473,7 +478,6 @@ span {
 
 .swiper__line {
     display: flex;
-
 }
 
 hr {
@@ -499,6 +503,7 @@ hr {
 }
 
 .swiper__par {
+    width: 92%;
     font-weight: 400;
     font-size: 13px;
     line-height: 20px;
@@ -507,7 +512,7 @@ hr {
 }
 
 .swiper__par::after {
-    content: url(img/swiper/emodji.jpg);
+    content: url(../img/swiper/emodji.jpg);
     padding: 4px;
 }
 
@@ -524,7 +529,6 @@ hr {
 }
 
 .swiper__par-text {
-    max-width: 700px;
     word-break: break-all;
 }
 
@@ -559,6 +563,15 @@ textarea[name="message"] {
     color: #8D8D8D;
     border: none;
     outline: none;
+}
+
+textarea:-moz-placeholder {
+    padding-top: 18px;
+}
+
+textarea::-webkit-input-placeholder {
+    padding-top: 18px;
+
 }
 
 textarea {

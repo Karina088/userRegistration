@@ -10,17 +10,95 @@
     opacity: 0.3;
 }
 
-.icon__add:hover {
-    fill: #FFFFFF;
-    stroke: rgb(255, 253, 253);
+#main_menu {
+    height: 358px;
 }
 
-.logo__img:hover,
-.icon__add:hover {
-    filter: invert(100%);
-    -webkit-filter: invert(100%);
+.friends_list__description {
+    display: flex;
+    gap: 14px;
+    padding-top: 14px;
+    padding-bottom: 12px;
 }
 
-.logo__online:hover {
-    opacity: 0.3;
+.swiper {
+    margin-top: 34px;
+    width: 1140px;
+    height: 350px;
+    margin-bottom: 22px;
+}
+
+.swiper-wrapper {
+    padding: 0 42px;
+}
+
+hr {
+    width: 442px;
+}
+
+.swiper__line-hr-big {
+    width: 496px;
+}
+
+
+.friends_list {
+    margin: 400px 0 0 24px;
+    align-items: flex-end;
+    background-color: #25272A;
+}
+
+.content__text {
+    padding-left: 56px;
+    gap: 8px;
+}
+
+.content {
+    width: 1178px;
+}
+
+input[type="text"] {
+    padding: 8px 112px 8px 8px;
+}
+
+button[type="submit"] {
+    right: 11%;
+}
+
+.bell {
+    margin-right: 56px;
+}
+
+.message {
+    background-color: #ffffff;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.24);
+    padding: 36px 56px 6px 56px;
+}
+
+textarea:-moz-placeholder {
+    padding-top: 48px;
+}
+
+textarea::-webkit-input-placeholder {
+    font-size: 16px;
+    padding-top: 48px;
+}
+
+.message-btn {
+    padding: 6px 28px;
+    font-weight: 500;
+    font-size: 13px;
+    color: #a2a2a2;
+    letter-spacing: 0.07rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.smile {
+    align-self: center;
+    display: flex;
+}
+
+.message-footer {
+    opacity: 0.7;
 }
