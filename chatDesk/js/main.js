@@ -2,7 +2,8 @@ const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'vertical',
     loop: false,
-    slidesPerView: 3,
+    slidesPerView: 2,
+    spaceBetween: 0,
     mousewheel: true,
     freeMode: true,
     autoplay: true,

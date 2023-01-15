@@ -135,22 +135,21 @@
             <div class="search">
                 <form action="#">
                     <input type="text" placeholder="Search...">
-                    <button type="submit"><img src="img/content/search.svg" alt="search icon"></button>
+                    <button type="reset"><img src="img/content/search.svg" alt="search icon"></button>
                 </form>
             </div>
             <div class="bell">
             </div>
         </div>
         <div class="swiper">
-            <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-                <!-- Slides -->
                 <div class="swiper-slide">
                     <div class="swiper-content">
                         <img src="img/swiper/avatarJeshua.jpg" alt="avatar photo">
                         <div class="swiper-content__text">
                             <h4 class="swiper__title">Jeshua Stout <span>6:38 PM</span></h4>
-                            <p class="swiper-par">@pierrhack I did for 6 days in Iceland</p>
+                            <p class="swiper-par">@pierrhack I did for 6 days in Iceland. Lorem ipsum dolor sit amet
+                                consectetur, adipisicing elit. Veniam exercitationem esse rem.</p>
                         </div>
                     </div>
                     <div class="swiper__line">
@@ -211,31 +210,33 @@
         </div>
         <div class="form__message">
             <div class="form__message-content">
-                <div class="form__message-right">
-                    <form action="#">
+                <div class="form">
+                    <form action="#" id="form" class="form__body">
                         <div class="form__item">
-                            <div class="form__label">Прикрепить фото</div>
+                            <label for="formName" class="form__label">From:</label>
+                            <input id="formName" type="text" name="name" class="form__input _req">
+                        </div>
+                        <div class="form__item">
+                            <label for="formEmail" class="form__label">Whom:</label>
+                            <input id="formEmail" type="text" name="email" class="form__input _req _email"
+                                placeholder="email">
+                        </div>
+                        <div class="form__item">
                             <div class="file">
                                 <div class="file__item">
                                     <input id="formImage" accept=" .jpg, .png, .gif" type="file" name="image"
                                         class="file__input">
-                                    <div class="file__btn">
-                                        <img src="img/message/backtack.svg" alt="backtack icon">
+                                    <div class="file__button">
                                     </div>
                                 </div>
                                 <div class="file__preview"></div>
                             </div>
-                        </div>
-                        <div class="form__microphone">
-                            <img class="message__content-img" src="img/message/microphone.svg" alt="microphone icon">
-                        </div>
-                        <div class="form__item">
-                            <label for="formMessage" class="form__label">Write a message...</label>
+                            <label for="formMessage" class="form__label insert-picture">write a message...</label>
                             <textarea name="message" id="formMessage" class="form__input"></textarea>
                         </div>
-                        <!-- <textarea name="message" cols="70" rows="4" placeholder="Write a message..."></textarea>
-                        <button class="message-btn">Send</button> -->
-                        <button type="submit" class="message-btn">Send</button>
+                        <div class="form__item ">
+                            <button type="submit" class="form__button"><span class="span-btn">send</span></button>
+                        </div>
                     </form>
                 </div>
                 <div class="smile">
@@ -243,16 +244,16 @@
                 </div>
             </div>
         </div>
-        <div class="message-footer">
+        <!-- <div class="message-footer">
             <img src="img/message-footer/bokeh.jpg" alt="bubble photo" style="width: 1182px; height: 135px;">
             <div class="message-footer__img"></div>
-        </div>
+        </div> -->
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/easy-toggler@2.2.7"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/messageBtn.js"></script>
+    <script src="js/form.js"></script>
 </body>
 
 </html>
