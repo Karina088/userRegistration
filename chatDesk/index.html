@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <nav>
+    <header>
         <div class="dots">
             <div class="dots__red"></div>
             <div class="dots__yellow"></div>
@@ -44,9 +44,9 @@
             </div>
         </div>
 
-    </nav>
+    </header>
 
-    <div class="dropdown">
+    <nav class="dropdown">
         <div class="dropdown__btn">
             <button easy-toggle="#main_menu" easy-class="show" class="dropdown-toggle">Nomad List</button>
             <div class="dropdown-icon">
@@ -125,10 +125,10 @@
                 <p class="friends_list__par">Orlando Diggs</p>
             </div>
         </div>
-    </div>
+    </nav>
 
     <main>
-        <div class="content">
+        <section class="content">
             <div class="content__text">
                 <h3 class="content__title">#general</h3>
                 <img class="content__img" src="img/content/star.svg" alt="star photo">
@@ -145,8 +145,8 @@
             </div>
             <div class="bell">
             </div>
-        </div>
-        <div class="swiper">
+        </section>
+        <section class="swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -154,7 +154,7 @@
                     <div class="swiper-content">
                         <img src="img/swiper/avatarJeshua.jpg" alt="avatar photo">
                         <div class="swiper-content__text">
-                            <h4 class="swiper__title">Jeshua Stout <span>6:38 PM</span></h4>
+                            <h4 class="swiper__title">Jeshua Stout<span> 6:38 PM</span></h4>
                             <p class="swiper-par">@pierrhack I did for 6 days in Iceland</p>
                         </div>
                     </div>
@@ -168,7 +168,7 @@
                     <div class="swiper-content">
                         <img class="swiper__avatar" src="img/swiper/avatarHarold.jpg" alt="avatar photo">
                         <div class="swiper-content__text">
-                            <h4 class="swiper__title">Harold Adams <span>5:02 PM</span></h4>
+                            <h4 class="swiper__title">Harold Adams<span> 5:02 PM</span></h4>
                             <p class="swiper__par">Which country to visit next? This is a photo with my friends -
                                 celebrating in
                                 Bali</p>
@@ -281,14 +281,14 @@
             </div>
 
             <div class="swiper-scrollbar"></div>
-        </div>
+        </section>
         <div class="message">
             <div class="message__content">
-                <div class="message__content-right">
+                <figure class="message__content-right">
                     <img src="img/message/backtack.svg" alt="backtack icon">
                     <img class="message__content-img" src="img/message/microphone.svg" alt="microphone icon">
                     <textarea name="message" cols="70" placeholder="Message in #general"></textarea>
-                </div>
+                </figure>
                 <div>
                     <img src="img/message/smile.svg" alt="smile icon">
                 </div>
@@ -308,10 +308,10 @@
                 <a href="#"><img src="img/profile/in.svg" alt="linkedIn photo"></a>
             </div>
             <div class="profile__btn">
-                <div class="profile__dropdown">
+                <figure class="profile__dropdown">
                     <button class="profile__dropdown-par">Message</button>
                     <button class="profile__dropdown-toggle"><img src="img/profile/arrow.svg" alt="arrow icon"></button>
-                </div>
+                </figure>
             </div>
             <div class="profile__dropdown-list">
                 <ul>

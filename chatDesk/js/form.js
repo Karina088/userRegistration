@@ -101,3 +101,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+
+const smileEl = document.querySelector('.smile__menu');
+document.querySelector('.smile__img')
+    .addEventListener('click', () => {
+        smileEl.classList.toggle('show');
+    });
