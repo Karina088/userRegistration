@@ -80,19 +80,42 @@ form * {
 }
 
 .form__message {
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     border-top: 0.5px solid rgba(0, 0, 0, 0.24);
+    background-image: linear-gradient(to right, rgba(224, 229, 236, 0.633), rgba(121, 185, 230, 0.664));
+    min-height: 368px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.24);
 }
 
-.form__message-content {
+.form {
+    display: inline-flex;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin: 34px 56px 14px 56px;
 }
 
-.form {
-    display: inline-flex;
+.form__body {
+    position: relative;
+}
+
+.form__body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(236, 201, 204, 0.659) url("../img/message/catLoading.gif") center / 500px no-repeat;
+    /* background: rgba(255, 255, 255, 0.659) url("../img/message/whiteLoading.gif") center / 400px no-repeat; */
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease 0s;
+}
+
+.form__body._sending::after {
+    opacity: 1;
+    visibility: visible;
 }
 
 .form__item {
@@ -122,8 +145,13 @@ input.from__input {
     border-radius: 5px;
 }
 
+input.form__input {
+    background-color: #ffffff;
+}
+
 .form__input:focus {
-    box-shadow: 0 0 8px #5372ab95;
+    /* box-shadow: 0 0 8px #5372ab95; */
+    box-shadow: 0 0 10px #53ab92f0;
 }
 
 .form__input._error {
@@ -139,9 +167,9 @@ input::-webkit-input-placeholder {
 }
 
 textarea.form__input {
-    min-height: 50px;
+    min-height: 100px;
     width: 550px;
-    resize: horizontal;
+    resize: vertical;
     padding: 20px;
     border: 0.5px solid #aeaeae5d;
 }
@@ -189,7 +217,7 @@ textarea.form__input {
 }
 
 .form__button {
-    width: 10%;
+    width: 12%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -207,6 +235,12 @@ textarea.form__input {
     transition: background-color 0.5s ease 0s;
 }
 
+.btn-sub {
+    display: flex;
+    justify-content: end;
+    padding-top: 18px;
+}
+
 .span-btn {
     color: #ffffff;
 }
@@ -221,10 +255,7 @@ textarea.form__input {
 }
 
 .smile {
-    align-self: center;
-    display: flex;
-}
-
-.message-footer {
-    opacity: 0.7;
+    display: inline-flex;
+    align-self: end;
+    margin: 0 0 14px 14px;
 }

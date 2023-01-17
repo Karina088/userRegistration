@@ -209,45 +209,39 @@
             <div class="swiper-scrollbar"></div>
         </div>
         <div class="form__message">
-            <div class="form__message-content">
-                <div class="form">
-                    <form action="#" id="form" class="form__body">
-                        <div class="form__item">
-                            <label for="formName" class="form__label">From:</label>
-                            <input id="formName" type="text" name="name" class="form__input _req">
-                        </div>
-                        <div class="form__item">
-                            <label for="formEmail" class="form__label">Whom:</label>
-                            <input id="formEmail" type="text" name="email" class="form__input _req _email"
-                                placeholder="email">
-                        </div>
-                        <div class="form__item">
-                            <div class="file">
-                                <div class="file__item">
-                                    <input id="formImage" accept=" .jpg, .png, .gif" type="file" name="image"
-                                        class="file__input">
-                                    <div class="file__button">
-                                    </div>
+            <div class="form">
+                <form action="#" id="form" class="form__body">
+                    <div class="form__item">
+                        <label for="formName" class="form__label">From*:</label>
+                        <input id="formName" type="text" name="name" class="form__input _req">
+                    </div>
+                    <div class="form__item">
+                        <label for="formEmail" class="form__label">Whom*:</label>
+                        <input id="formEmail" type="text" name="email" class="form__input _req _email"
+                            placeholder="email">
+                    </div>
+                    <div class="form__item">
+                        <div class="file">
+                            <div class="file__item">
+                                <input id="formImage" accept=".jpg, .png, .gif" type="file" name="image"
+                                    class="file__input">
+                                <div class="file__button">
                                 </div>
-                                <div class="file__preview"></div>
                             </div>
-                            <label for="formMessage" class="form__label insert-picture">write a message...</label>
-                            <textarea name="message" id="formMessage" class="form__input"></textarea>
+                            <div id="formPreview" class="file__preview"></div>
                         </div>
-                        <div class="form__item ">
-                            <button type="submit" class="form__button"><span class="span-btn">send</span></button>
+                        <label for="formMessage" class="form__label insert-picture">write a message...</label>
+                        <textarea name="message" id="formMessage" class="form__input"></textarea>
+                        <div class="smile">
+                            <img src="img/message/smile.svg" alt="smile icon">
                         </div>
-                    </form>
-                </div>
-                <div class="smile">
-                    <img src="img/message/smile.svg" alt="smile icon">
-                </div>
+                    </div>
+                    <div class="form__item btn-sub">
+                        <button type="submit" class="form__button"><span class="span-btn">send</span></button>
+                    </div>
+                </form>
             </div>
         </div>
-        <!-- <div class="message-footer">
-            <img src="img/message-footer/bokeh.jpg" alt="bubble photo" style="width: 1182px; height: 135px;">
-            <div class="message-footer__img"></div>
-        </div> -->
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/easy-toggler@2.2.7"></script>
