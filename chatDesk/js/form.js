@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
             form.classList.add('_sending');
             // отправка запроса
             let response = await fetch('sendmail.php', {
-                method: 'POST',
+                method: 'GET',
                 body: formData
             });
             if (response.ok) {
@@ -70,10 +70,6 @@ document.addEventListener('DOMContentLoaded', function () {
     function emailTest(input) {
         return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
     }
-
-    // function nameTest(input) {
-    //     return /^[a-zA-Zа-яА-ЯёЁ'][a-zA-Z-а-яА-ЯёЁ' ]+[a-zA-Zа-яА-ЯёЁ']?$/.test(input.value);
-    // }
 
     const formImage = document.getElementById('formImage');
     const formPreview = document.getElementById('formPreview');
