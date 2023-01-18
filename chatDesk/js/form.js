@@ -8,16 +8,19 @@ document.addEventListener('DOMContentLoaded', function () {
         e.preventDefault();
         let error = formValidate(form);
 
+        //объект FormData для отправки данных как form/multipart
         let formData = new FormData(form);
         formData.append('image', formImage.files[0]);
 
         if (error === 0) {
             form.classList.add('_sending');
-            let response = await fetch('http://localhost', {
+            // отправка запроса
+            let response = await fetch('sendmail.php', {
                 method: 'POST',
                 body: formData
             });
             if (response.ok) {
+                // response.json() – декодирует ответ в формате JSON. Один из методов чтения ответа
                 let result = await response.json();
                 alert(result.message);
                 formPreview.innerHTML = '';
@@ -102,6 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+// smile btn click
 const smileEl = document.querySelector('.smile__menu');
 document.querySelector('.smile__img')
     .addEventListener('click', () => {
