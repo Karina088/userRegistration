@@ -22,13 +22,13 @@ $mail->Subject = 'Привет! Это тест письмо';
 $body = '<h3>Кто двинется, тот гей</h3>';
 
 if (trim(!empty(['name']))) {
-    $body .= '<p><strong>Имя:</strong> ' . $_GET['name'] . '</p>';
+    $body .= '<p><strong>Имя:</strong> ' . $_POST['name'] . '</p>';
 }
 if (trim(!empty(['email']))) {
-    $body .= '<p><strong>Email:</strong> ' . $_GET['email'] . '</p>';
+    $body .= '<p><strong>Email:</strong> ' . $_POST['email'] . '</p>';
 }
 if (trim(!empty(['message']))) {
-    $body .= '<p><strong>Message:</strong> ' . $_GET['message'] . '</p>';
+    $body .= '<p><strong>Message:</strong> ' . $_POST['message'] . '</p>';
 }
 
 // прикрепить файл 

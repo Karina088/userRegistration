@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
             form.classList.add('_sending');
             // отправка запроса
             let response = await fetch('sendmail.php', {
-                method: 'GET',
+                method: 'POST',
                 body: formData
             });
             if (response.ok) {
